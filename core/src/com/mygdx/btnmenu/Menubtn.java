@@ -43,7 +43,7 @@ public class Menubtn extends Game implements InputProcessor {
         TextButton.TextButtonStyle textButtonStyle = new TextButton.TextButtonStyle();
         textButtonStyle.up = skin.newDrawable("background", Color.BLACK);
         textButtonStyle.down = skin.newDrawable("background", Color.WHITE);
-        textButtonStyle.checked = skin.newDrawable("background", Color.BLACK);
+        textButtonStyle.checked = skin.newDrawable("background", Color.WHITE);
         textButtonStyle.over = skin.newDrawable("background", Color.WHITE);
         textButtonStyle.font = skin.getFont("default");
         skin.add("default", textButtonStyle);
@@ -57,7 +57,7 @@ public class Menubtn extends Game implements InputProcessor {
             }
         });
         stage.addActor(newGameButton);
-        Gdx.input.setInputProcessor(this);
+        Gdx.input.setInputProcessor(stage);
     }
 
     //@Override
